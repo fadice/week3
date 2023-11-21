@@ -21,5 +21,5 @@ def predict():
     #print(pred)
     return render_template('index.html', predict=str(pred))
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', post=5000)
 
